@@ -19,7 +19,7 @@ Project crypto tracker dựa trên django và lấy api từ coingecko [Coingeck
 
 
 
-## 📋 Incomming<div align="center">
+
   
 # Crypto-Tracker
 
