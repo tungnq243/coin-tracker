@@ -18,20 +18,7 @@ Project crypto tracker dựa trên django và lấy api từ coingecko [Coingeck
 
 
 
-
-
-  
-# Crypto-Tracker
-
-</div>
-
-<div align="center">
-  
-Project crypto tracker dựa trên django và lấy api từ coingecko [Coingecko API](https://www.coingecko.com/). 
-
  
-
-</div>
 
 
 ## 📋 Comming up
