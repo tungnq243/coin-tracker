@@ -6,65 +6,49 @@
 
 <div align="center">
   
-A Crypto Currency Tracker project based on Django 4.0 that is made to track prices on top 100 crypto currences in **realtime** which is achieved by using Django Channels. Data is gathered from the [Coingecko API](https://www.coingecko.com/). 
+Project crypto tracker dựa trên django và lấy api từ coingecko [Coingecko API](https://www.coingecko.com/). 
 
-Scroll down to see the **Instructions** on how to launch this project properly. 
+ 
 
 </div>
 
 ## 🔎 Preview 
 
-![crypto_proj_1](https://user-images.githubusercontent.com/86254474/172397460-2806f735-013d-4188-9020-47550dac31b1.png)
+![crypto_proj_1](https://github.com/tungnq243/coin-tracker/issues/1#issue-2842655841)
 
-## 📖 Instructions
 
-Clone this repository, cd into it
 
-```
-git clone https://github.com/hatredholder/Crypto-Tracker.git
-cd Crypto-Tracker
-```    
 
-Start a new **Virtualenv**, activate it, install Python module requirements
+## 📋 Incomming<div align="center">
+  
+# Crypto-Tracker
 
-```
-virtualenv myenv
-source myenv/bin/activate
-pip install -r requirements.txt
-```
-Run the **Redis** server
-```
-redis-server
-```
-Run a **Celery** worker
-```
-celery -A crypto_proj worker
-```
-Run the **Celery** beat
-```
-celery -A crypto_proj beat
-```
-Finally, run the **Django** server
-```
-python manage.py runserver
-```
+</div>
 
-## 💻 Technologies
+<div align="center">
+  
+Project crypto tracker dựa trên django và lấy api từ coingecko [Coingecko API](https://www.coingecko.com/). 
 
-Frontend: Basic **HTML**
+ 
 
-Backend: **Django**, **Celery**, **Redis** (for Celery message broking and Django Channels layers)
+</div>
 
-Database: **SQLite**
+## 🔎 Preview 
 
-## 📋 To Do
+![crypto_proj_1](https://github.com/tungnq243/coin-tracker/issues/1#issue-2842655841)
 
-<details>
 
-  <summary>Click to Open</summary>
 
-- [x] Update template JavaScript logic;
 
-- [x] Implement Django Channels connection
+## 📋 Comming up
 
-</details>
+
+- Tích hợp thêm stock tracker 
+
+- Currency converted (mayme)
+ 
+- Gold converted
+
+- ...
+
+
