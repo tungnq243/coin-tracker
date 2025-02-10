@@ -1,0 +1,16 @@
+.currency-sign {
+    font-weight: bold;   /* Làm cho ký hiệu tiền tệ đậm hơn */
+    font-size: 1.5em;     /* Tăng kích thước chữ để ký hiệu nổi bật */
+}
+
+.currency-sign.vnd {
+    color: #e74c3c;       /* Màu đỏ cho VND */
+    font-size: 2em;       /* Tăng kích thước chữ cho VND */
+    font-weight: 800;     /* Làm ký hiệu VND đậm hơn */
+}
+
+.currency-sign.usd {
+    color: #1e90ff;       /* Màu xanh dương cho USD */
+    font-size: 2em;       /* Tăng kích thước chữ cho USD */
+    font-weight: 800;     /* Làm ký hiệu USD đậm hơn */
+}

@@ -4,15 +4,16 @@
     Main Page
 {% endblock title %}
 {% block content %}
-    <div style="text-align:center">Data gets updated automatically every 60 seconds!</div>
+    <div style="text-align:center">Data được update tự động sau mỗi 1 phút!</div>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">Logo</th>
                 <th scope="col">Name</th>
                 <th scope="col">Rank</th>
-                <th scope="col">Market Cap</th>
-                <th scope="col">Price</th>
+                <th scope="col">Market Cap (USD)</th>
+                <th scope="col">Price (USD)</th>
+                <th scope="col">Price (VND)</th>
             </tr>
         </thead>
         <tbody>
@@ -24,8 +25,9 @@
                         </td>
                         <td class="name align-middle" value="{{ forloop.counter }}">{{ obj.name }}</td>
                         <td class="rank align-middle" value="{{ forloop.counter }}">{{ forloop.counter }}</td>
-                        <td class="market_cap align-middle" value="{{ forloop.counter }}">{{ obj.market_cap|intcomma }}</td>
-                        <td class="price align-middle" value="{{ forloop.counter }}">{{ obj.price }}</td>
+                        <td class="market_cap align-middle" value="{{ forloop.counter }}">{{ obj.market_cap|intcomma }} <span class="currency-sign usd">$</span></td>
+                        <td class="price align-middle" value="{{ forloop.counter }}">{{ obj.price }} <span class="currency-sign usd">$</span></td>
+                        <td class="price_vnd align-middle" value="{{forloop.counter}}">{{obj.price_vnd|floatformat:2|intcomma}} <span class="currency-sign vnd">₫</span></td>
                     </tr>
                 {% endfor %}
             {% else %}
@@ -68,6 +70,9 @@
 
             // Set market cap
             document.querySelector(`obj.market_cap[value="${Object.values(data)[0][0]}"]`).innerHTML = numberWithCommas(Object.values(data)[0][3]);
+
+            const price_vnd = Object.values(data)[0][1] * {{ usd_to_vnd }};
+            document.querySelector(`.price_vnd[value="${Object.values(data)[0][0]}"]`).innerHTML = numberWithCommas(price_vnd.toFixed(2));
   
         }
     </script>
